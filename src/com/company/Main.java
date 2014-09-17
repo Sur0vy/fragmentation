@@ -10,7 +10,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int k = in.nextInt();
-        if ((n >= MAX_NUMBER) && (k >= MAX_NUMBER)){
+        if ((n > MAX_NUMBER) || (k > MAX_NUMBER)){
             System.out.println("Input values can't be bigger than " + MAX_NUMBER);
         } else {
             int cnt = FragmentationCount.split(n, k);
